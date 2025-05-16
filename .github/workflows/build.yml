@@ -23,7 +23,7 @@ jobs:
           path: .buildozer_global
           key: buildozer-global-${{ hashFiles('buildozer.spec')}} #replace with your path
 
-      - uses: actions/cach@v2
+      - uses: actions/cach@v3
         with:
           path: .buildozer
           key: ${{runner.os}}-${{ steps.get-date.outputs.date }}-${{ hashfiles('buildozer.spec')}}
