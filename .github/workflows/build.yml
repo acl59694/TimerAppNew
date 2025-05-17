@@ -2,8 +2,10 @@ name: CI
 on:
   push:
     branches: [ main ]
+    
 
 jobs:
+  rm  ~/.docker/config.json
   build:
     runs-on: ubuntu-latest
 
