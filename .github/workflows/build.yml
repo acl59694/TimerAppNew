@@ -5,7 +5,6 @@ on:
     
 
 jobs:
-  rm  ~/.docker/config.json
   build:
     runs-on: ubuntu-latest
 
